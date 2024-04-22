@@ -1,0 +1,22 @@
+version: '3.8'
+
+volumes:
+  mongodb:
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: 'mongodb'
+    environment:
+      MONGO_INITDB_DATABASE: sampleDB
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb://data/db
+
+  bot:
+    build: ./
+    env_file: .env
+    command: python ./main.py
+    depends_on:
+      - mongodb
