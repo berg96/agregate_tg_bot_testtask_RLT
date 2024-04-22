@@ -15,7 +15,7 @@ services:
       - mongodb://data/db
 
   bot:
-    build: ./
+    image: berg1005/agregate_tg_bot_testtask_rlt:latest
     env_file: .env
     command: python ./main.py
     depends_on:
