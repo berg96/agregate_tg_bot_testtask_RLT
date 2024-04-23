@@ -1,3 +1,4 @@
+![Workflow status badge](https://github.com/berg96/agregate_tg_bot_testtask_RLT/actions/workflows/main.yml/badge.svg)
 # Тестовое задание Python developer от RLT
 
 ## Описание задачи:
@@ -54,9 +55,8 @@ tg: [@Berg1005](https://t.me/berg1005)
 ```
 git clone git@github.com:berg96/agregate_tg_bot_testtask_RLT.git
 ```
-Собрать и запустить Docker compose:
+Запустить Docker compose:
 ```
-docker compose build
 docker compose up -d
 ```
 Скопировать образ коллекции из репозитория в контейнер и восстановить коллекцию в БД:
